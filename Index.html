@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Author" content="The BBC Group">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Time, Luxury, Experience, Watch">
+    <meta name="watch" content="BBC, hand, accessories">
+    <title>BBC</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style> 
+        h1{
+            font-family: 'Franklin Gothic Medium';
+            margin-left: 10px;
+        }
+        p{
+            font-family: 'Segoe UI';
+            margin-left: 10px;
+        }
+        h3{
+            font-family: 'Franklin Gothic Medium';
+            margin-left: 10px;
+        }
+        .product-section{
+            margin: 40px;
+        }
+		.product-section h2 {
+			font-size: 28px;
+			margin-bottom: 20px;
+			color: #333;
+		}
+
+		.product-container {
+			display: flex;
+			justify-content: space-around;
+			gap: 20px;
+		}
+
+		.product {
+			background-color: #fff;
+			padding: 20px;
+			box-shadow:  0 0 14px rgba(0, 0, 0, 0.6);
+			text-align: center;
+			width: 300px;
+			
+		}
+		.product:hover{width:400px;}
+		.product img {
+			width: 100%;
+			height: auto;
+		}
+	    .product h3 {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-size: 20px;
+		}
+        .blog-section{
+            margin: 40px auto; 
+            width: 1490px; 
+            height:500px ; 
+            margin-top: 10px;
+            display: flex;
+            padding: 30px;
+
+        }
+        .blog_container {
+            display: flex;
+            flex-direction: column; /* Stack image and text vertically */
+            box-shadow:  0 0 14px rgba(0, 0, 0, 0.6);
+            width: 300px;
+            height: 300px;
+            justify-content: space-between; /* Ensures text stays at the bottom */
+            align-items: center; /* Centers content */
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+            background-color: white;
+        }
+        .blog_container:hover{
+            width:350px;
+        }
+        .img_cont{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blog_container p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: auto;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(129, 21, 21);
+        }
+        a:hover{
+            color:rgb(216, 64, 64)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <!--Div for the LOGO part-->
+            <div class="navlogo">
+                <a href="../Index.html"><img src="./image/Logo_png.png" width="100%" height="100%"></a>
+            </div>
+            <!--Div For Options in Navigation Bar-->
+                <nav class="navbar">
+                            <ul class="nav-list">
+                                <li><a href="./Index.html "><u>Home</u></a></li>
+                                <li><a href="./HTML/product.html">Product</a></li>
+                                <li><a href="./HTML/Blog.html">Blog</a></li>
+                                <li><a href="./HTML/research.html">Research</a></li>
+                                <li><a href="./HTML/AboutUS.html">About Us</a></li>
+                                <li><a href="./HTML/contactUsPage.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        </header>
+        <!--image slider-->
+	    <div class="slider">
+        <div id="img">
+            <img src="./image/showcase.jpg" >
+        </div>
+        </div>
+        <!--Intro container-->
+        <div style="background-color:rgb(129, 21, 21);width:1490px; height:500px; margin:auto; display: flex; margin-top:55px;">
+            <!--Image for Intro-->
+            <div style="box-shadow:  0 0 14px rgba(0, 0, 0, 0.6);border: 5px solid black; width: 350px; height: 350px; margin-left: 70px; margin-top: 75px;">
+                <img src="./image/displaywatch.png" width="350px" height="350px">
+            </div>
+            <!--Text-->
+            <div style="box-shadow:  0 0 14px rgba(0, 0, 0, 0.6);background-color:rgb(240, 237, 237);border: 5px solid black; width: 900px; height: 350px;; margin-top: 75px; margin-left: 75px;">
+                <h1 style="font-size: 50px;">Introduction</h1>
+                <p style="font-size: 25px;">The BBC is a respected brand that is passionate about creating top-of-the-range watches that hail precision, elegance, and innovation. With a deep-rooted pledge to quality, our designs span a wide range of tastes, from the classics to the modern and tech-savvy. All these watches have been carefully crafted with features that blend style and practicality while making the wearer feel at home with the promise of reliability and flair. Be it for everyday use or special events, the BBC watches are meant to put meaning into every moment.</p>
+            </div>
+        </div>
+        <div class="product-section">
+            <h2><a href="./HTML/product.html">Shop our products &#10095;</a></h2>
+            <div class="product-container">
+                <div class="product">
+                    <a href="./HTML/product.html"><img src="./image/newwatch3.webp" alt="Classic Watch 1"></a>
+                    <h3><a href="./HTML/product.html">New Listings</a></h3>
+                </div>
+                <div class="product">
+                    <a href="./HTML/product.html"><img src="./image/menwatch1.webp" alt="Classic Watch 2"></a>
+                    <h3><a Men href="./HTML/product.html">Men</a></h3>
+                </div>
+                <div class="product">
+                    <a href="./HTML/product.html"><img src="./image/womenwatch1.webp" alt="Classic Watch 3"></a>
+                    <h3><a href="./HTML/product.html">Women</a></h3>
+                </div>
+            </div>
+        </div> 
+        <!--Blog Section-->
+        <div class="blog-section" >
+                <h1><a href="./HTML/Blog.html">Blog &#10095;</a></h1>
+
+                <div class=blog_container>
+                    <div class="img_cont">
+                        <img src="./image/blog1.jpg" width="300px" height="90%">
+                    </div>
+                    <a style="text-decoration: none;" href="#"><p>Best Watches for Professionals</p></a>
+                </div>
+                <div class="blog_container">
+                    <div class="img_cont">
+                        <img src="./image/blog2.jpg" width="300px" height="90%">
+                    </div>
+                    <a style="text-decoration: none;" href="#"><p>The Evolution of Smartwatches</p></a>
+                </div>
+                <div class="blog_container">
+                    <div class="img_cont">
+                        <img src="./image/blog3.jpg" width="300px" height="90%">
+                    </div>
+                    <a style="text-decoration: none;" href="#"><p>Luxury Watches Worth Investing In</p></a>
+                </div>
+        </div>
+        <!--Footer-->
+	<footer class="footer1">
+        <!-- Main container for footer content -->
+        <div class="footer2">
+            <!-- Discount and Email Section -->
+            <div class="discount" style="width: 250px;">
+                <h1>
+                    <a href="HTML/product.html">30% Discount</a>
+                </h1>
+                <p>
+                    The BBC Watch Company offers finely crafted timepieces with classic styles and unparalleled craftsmanship. Don't miss the opportunity to upgrade your look with a special 30% discount. It won't last long!
+                </p>
+            </div>
+    
+            <!-- About Us Section -->
+            <div style="width: 250px;">
+                <h1>
+                    <a href="../HTML/AboutUS.html">About Us</a>
+                </h1>
+                <p>
+                    <a href="../HTML/AboutUS.html">Learn our story and meet our team</a>
+                </p>
+                <!-- Highlighted "Meet our Team" Section -->
+                <div class="team-section">
+                    <p style="font-weight: bold;">Meet our Team:</p>
+                    <ul style="margin-top: 10px; padding-left:20px;">
+                        <li><a href="../HTML/PragunCV.html"  target="_blank">Pragun Bhattarai</a></li>
+                        <li><a href="../HTML/DarsheelCV.html"  target="_blank">Darsheel Bam</a></li>
+                        <li><a href="../HTML/KhushiCV.html"  target="_blank">Khushi Shrestha</a></li>
+                        <li><a href="../HTML/UjjainCV.html" target="_blank">Ujjain Dhungana</a></li>
+                        <li><a href="../HTML/RodhanCV.html"  target="_blank">Rodhan Shrestha</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Logo Section -->
+            <div classs="footer-logo">
+                <a href="../Index.html">
+                    <img src="./image/Logo_png.png" alt="BBC Watch Company Logo" width="200" height="70">
+                </a>
+                <p>&#169; All rights reserved</p><br>
+                <p style="text-align: center;">Read our<br><a href="https://policies.google.com/privacy?hl=en-US">privacy policy</a> <br>and<br> <a href="https://en.wikipedia.org/wiki/Terms_of_service" >Terms and Conditions.</a></p>
+            </div>
+            <!-- Social Media Section (Using Table) -->
+            <div style="width: 250px;">
+                <h1>Follow Us</h1><br>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="./image/insta.jpg" alt="Instagram Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="./image/facebook.jpg" alt="Facebook Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://np.linkedin.com/" target="_blank"><img src="./image/Linkedin.png" alt="LinkedIn Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://np.linkedin.com/" target="_blank">LinkedIn</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://x.com/home" target="_blank"><img src="./image/x.png" alt="X (Twitter) Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://x.com/home" target="_blank">X / Twitter</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+        <script>
+            let images = ["./image/showcase.jpg", "./image/showcase2.jpg", "./image/showcase3.jpg","./image/showcase4.jpg"]; //array of images to slide
+            var img= document.getElementById('img');
+            var x = 0;
+            setInterval(slider, 3000); //changes slide every 4 sec
+            function slider(){
+                if(x<images.length){
+                x=x+1;
+                }
+                else{
+                x = 1;
+                }
+                img.innerHTML="<img src="+images[x-1]+">"; //changes the image in img tag inside slider
+            }
+    
+        </script>
+</body>
+</html>

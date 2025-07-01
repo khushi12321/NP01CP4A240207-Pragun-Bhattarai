@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products</title>
+	<link rel="stylesheet" href="../CSS/styles.css">
+	<style>
+		.series {
+			margin-top:70px;
+			margin-bottom:70px;
+			margin-right:140px;
+			margin-left:140px;
+		}
+		.series h2 {
+			font-size: 28px;
+			margin-bottom: 20px;
+			color: rgb(129, 21, 21);
+		}
+
+		.product-container {
+			display: flex;
+			justify-content: space-around;
+			gap: 20px;
+		}
+
+		.product {
+			background-color: #fff;
+			padding: 20px;
+			box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			width: 300px;
+			
+		}
+		.product:hover{width:400px;}
+		.product img {
+			width: 100%;
+			height: auto;
+		}
+
+		.product h3 {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-size: 20px;
+		}
+		s{
+			font-size: 14px;
+			color:rgb(163, 157, 157);
+		}
+		.price {
+			font-size: 18px;
+			color: rgb(129, 21, 21);
+			font-weight: bold;
+		}
+
+		.description {
+			font-size: 14px;
+			line-height: 1.3;
+		}
+
+		.add-to-cart {
+			background-color: rgb(129, 21, 21);
+			color: white;
+			border: none;
+			padding: 12px;
+			font-size: 16px;
+			cursor: pointer;
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.add-to-cart:hover {
+			background-color: rgb(216, 64, 64)0;
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+        <!--Div For the Navigation bar-->
+        <header>
+            <!--Div for the LOGO part-->
+            <div class="navlogo">
+                <a href="../Index.html"><img src="../image/Logo_png.png" width="100%" height="100%"></a>
+            </div>
+            <!--Div For Options in Navigation Bar-->
+                <nav class="navbar">
+                            <ul class="nav-list">
+                                <li><a href="../Index.html ">Home</a></li>
+                                <li><a href="../HTML/product.html"><u>Product</u></a></li>
+                                <li><a href="../HTML/Blog.html">Blog</a></li>
+                                <li><a href="../HTML/research.html">Research</a></li>
+                                <li><a href="../HTML/AboutUS.html">About Us</a></li>
+                                <li><a href="../HTML/contactUsPage.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        </header>        
+    </div>
+    <!--image slider-->
+	<div class="slider">
+        <div id="img">
+            <img src="../image/showcase2.jpg" >
+        </div>
+    </div>  
+        <!-- Series 1 -->
+        <div class="series">
+            <h2>New Listings!!</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="../image/newwatch1.webp" alt="Classic Watch 1">
+                    <h3>Luminox Atacama Field</h3>
+                    <p class="price"> <s>Rs.19,687</s><br>Rs.16,999</p>
+                    <p class="description">Blends the functionality of a modern Swiss Made timepiece with an updated retro look wish is rugged and reliable.</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../image/newwatch2.webp" alt="Classic Watch 2">
+                    <h3>G-Shock CasiOak</h3>
+                    <p class="price"><s>Rs.64,687</s><br>Rs.59,458</p>
+                    <p class="description">Elevate the iconic appearance of the original G-SHOCK with the GA-2100 series with blend of classic design and advanced technology.</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../image/newwatch3.webp" alt="Classic Watch 3">
+                    <h3>Fossil Grant Automatic </h3>
+                    <p class="price"><s>Rs.29,687</s><br>Rs.27,689</p>
+                    <p class="description">This exquisite timepiece effortlessly combines classic style with modern functionality, making it an accessory for the discerning man.</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Series 2 -->
+        <div class="series">
+            <h2>Men</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="../image/menwatch1.webp" alt="Sport Watch 1">
+                    <h3>Edox Neptunian Grande</h3>
+                    <p class="price"><s>Rs.21,687</s><br>Rs.19,999</p>
+                    <p class="description">A masterful blend of engineering prowess and elegant design, a tribute to the brand's enduring legacy of excellence.</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../image/menwatch2.webp" alt="Sport Watch 2">
+                    <h3>Luminox Master Carbon Seal</h3>
+                    <p class="price"><s>Rs.24,687</s><br>Rs.21,999</p>
+                    <p class="description"> Crafted for both adventurers and connoisseurs alike, this watch is a testament to superior craftsmanship.</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../image/menwatch3.webp" alt="Sport Watch 3">
+                    <h3>Frederique Constant Classics</h3>
+                    <p class="price"><s>Rs.34,687</s><br>Rs.29,799</p>
+                    <p class="description">A subtle combination of tradition and elegance featuring a pure matt finishing and roman numerals.</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Series 3 -->
+        <div class="series">
+            <h2>Women</h2>
+            <div class="product-container">
+                <div class="product">
+                    <img src="../image/womenwatch1.webp" alt="Modern Watch 1">
+                    <h3>Daniel Wellington
+                        Petite </h3>
+                    <p class="price"><s>Rs.19,687</s><br>Rs.18,959</p>
+                    <p class="description">Timepiece that seamlessly blends elegance with simplicity, becoming a true extension of your personal style.</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../image/womenwatch2.avif" alt="Modern Watch 2">
+                    <h3>Casio Sheen Analog</h3>
+                    <p class="price"><s>Rs.24,687</s><br>Rs.21,580</p>
+                    <p class="description">The extraordinary combination of colors and design elements in this watch makes it a truly unique piece.</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../image/womenwatch3.webp" alt="Modern Watch 3">
+                    <h3>Titan Lagan Pink_Dial</h3>
+                    <p class="price"><s>Rs.14,677</s><br>Rs.11,999</p>
+                    <p class="description">Offers a contemporary, minimalist stylish design that is both reliable and modern while adding a touch of elegance.</p>
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+		
+	<!--Footer-->
+	<footer class="footer1">
+        <!-- Main container for footer content -->
+        <div class="footer2">
+            <!-- Discount and Email Section -->
+            <div class="discount" style="width: 250px;">
+                <h1>
+                    <a href="HTML/product.html">30% Discount</a>
+                </h1>
+                <p>
+                    The BBC Watch Company offers finely crafted timepieces with classic styles and unparalleled craftsmanship. Don't miss the opportunity to upgrade your look with a special 30% discount. It won't last long!
+                </p>
+            </div>
+    
+            <!-- About Us Section -->
+            <div style="width: 250px;">
+                <h1>
+                    <a href="../HTML/AboutUS.html">About Us</a>
+                </h1>
+                <p>
+                    <a href="../HTML/AboutUS.html">Learn our story and meet our team</a>
+                </p>
+                <!-- Highlighted "Meet our Team" Section -->
+                <div class="team-section">
+                    <p style="font-weight: bold;">Meet our Team:</p>
+                    <ul style="margin-top: 10px; padding-left:20px;">
+                        <li><a href="../HTML/PragunCV.html"  target="_blank">Pragun Bhattarai</a></li>
+                        <li><a href="../HTML/DarsheelCV.html"  target="_blank">Darsheel Bam</a></li>
+                        <li><a href="../HTML/KhushiCV.html"  target="_blank">Khushi Shrestha</a></li>
+                        <li><a href="../HTML/UjjainCV.html" target="_blank">Ujjain Dhungana</a></li>
+                        <li><a href="../HTML/RodhanCV.html"  target="_blank">Rodhan Shrestha</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Logo Section -->
+            <div classs="footer-logo">
+                <a href="../Index.html">
+                    <img src="../image/Logo_png.png" alt="BBC Watch Company Logo" width="200" height="70">
+                </a>
+                <p>&#169; All rights reserved</p><br>
+                <p>Read our</p><a href="https://policies.google.com/privacy?hl=en-US">privacy policy</a> <br>and<br> <a href="https://en.wikipedia.org/wiki/Terms_of_service" >Terms and Conditions.</a></p>
+            </div>
+            <!-- Social Media Section (Using Table) -->
+            <div style="width: 250px;">
+                <h1>Follow Us</h1><br>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="../image/insta.jpg" alt="Instagram Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="../image/facebook.jpg" alt="Facebook Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://np.linkedin.com/" target="_blank"><img src="../image/Linkedin.png" alt="LinkedIn Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://np.linkedin.com/" target="_blank">LinkedIn</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://x.com/home" target="_blank"><img src="../image/x.png" alt="X (Twitter) Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://x.com/home" target="_blank">X / Twitter</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function addToCart()
+            {
+                alert("Your product has been successfully added to cart.")  
+            }
+    </script>
+    <script src="../JS/script.js"></script>
+</body>
+</html>

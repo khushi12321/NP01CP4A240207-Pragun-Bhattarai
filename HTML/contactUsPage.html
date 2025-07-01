@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us/Customer Support</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+.customerbg{
+    padding-top: 50px;
+    height:150px;
+    background-image: url("../image/custbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    text-align: center;
+    font-size: large;
+}
+.contact-box{
+    background-color: #f2f2f2;
+    display: flex;
+    padding: 10px;
+}
+.contact-box-left{
+    flex: 80%;
+    padding-left:30px ;
+    padding-right: 60px;
+}
+.input-row{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis:45%;
+}
+input{
+    width:100%;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid black;
+    padding-bottom:5px;
+}
+.contact-box-right{
+    flex: 20%;
+    padding:20px;
+    background-color: brown;
+    color: white;
+}
+input{
+    background-color: #f2f2f2;
+    width: 100%;
+    border-bottom: 1px solid black;
+    outline:none;
+    padding-bottom: 5px solid color;
+}
+textarea{
+    margin-top:7px;
+    width:100%;
+    border: 1px solid black;
+    
+}
+    
+    </style>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <div>
+        <!--Div For the Navigation bar-->
+        <header>
+            <!--Div for the LOGO part-->
+            <div class="navlogo">
+                <a href="../Index.html"><img src="../image/Logo_png.png" width="100%" height="100%"></a>
+            </div>
+            <!--Div For Options in Navigation Bar-->
+                <nav class="navbar">
+                            <ul class="nav-list">
+                                <li><a href="../Index.html ">Home</a></li>
+                                <li><a href="../HTML/product.html">Product</a></li>
+                                <li><a href="../HTML/Blog.html">Blog</a></li>
+                                <li><a href="../HTML/research.html">Research</a></li>
+                                <li><a href="../HTML/AboutUS.html">About Us</a></li>
+                                <li><a href="../HTML/contactUsPage.html"><u>Contact Us</u></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+    </div>
+    <div class = "container  ">
+        <div class="customerbg">
+        <h2>Customer Support</h2>
+        <h1>CONNECT WITH US</h1>    
+        <p>What can we help you with today?</p>
+        </div>
+        <br>
+        <div class = "contact-box" style="display: flex;"> 
+            <div class = "contact-box-left">
+                <h3>Send us your request/feedback </h3>
+                <br>
+                <form name="messageForm" onsubmit="validateForm()">
+                <div class="input-row">
+                    <!--Creating two sep classes input row & input Input group to provide flex basis on both things-->
+                    <div class="input-group">
+                        <label>Name:</label>
+                        <input type="text" name="name" placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone:</label><br>
+                        <input type="number" name="phone" placeholder="+977 9864685709">
+                    </div> 
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="johndoe123@gmail.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Address</label>
+                        <input type="text" name="address" placeholder="Kathmandu">
+                    </div>  
+                </div>
+                    <label>Message:</label><br>
+                    <textarea rows="8" cols="100%" name="message" placeholder="Your message"></textarea><!--cols 100% fills the colums to very end-->
+                    <br>
+                    <!--Giving inline style to input submit to overshadow  the internal css-->
+                    <input type="submit" value="Submit" style="margin-top:20px; font-size:22px; color:white; background-color: brown; width:120px; height:26px; border-bottom:none; padding-bottom:none;">
+                </form><br>
+                <p style="text-align: center; font-size:20px;">❤︎ Your honest feedbacks and reviews would be of great help to improve our services ❤︎ </p>
+            </div>
+            <div class = "contact-box-right">
+                <h2 style="text-align: center;">Reach Us</h2><br>
+                <div class="contact-info" style="text-align: center;">
+                    <div>
+                        <img src="../image/call.png" alt="call_icon" width="25px" height="25px">
+                        <p>Phone no:</p>
+                        <p>01-7248792 , 01-7342928</p><br>
+                    </div>
+                    <div>
+                        <img src="../image/mail.png" alt="mail" width="25px" height="25px">
+                        <p>Email:</p>
+                        <p>bholaboisclock@gmail.com</p><br>
+                    </div>
+                    <div>
+                        <img src="../image/home.png" alt="address_icon" width="25px" height="25px">
+                        <p>Address:</p>
+                        <p>Durbarmarg, Kathmandu,</p>
+                        <p>NB Center, New Baneshwor</p>
+                        <p>Lakeside Center, Pokhara</p><br>
+                    </div>
+                    <div>
+                        <img src="../image/clock.png" alt="clock_icon" width="25px" height="25px">
+                        <p>Opening Hours:</p>
+                        <p>10:00 AM to 7:00 PM</p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+	<footer class="footer1">
+        <!-- Main container for footer content -->
+        <div class="footer2">
+            <!-- Discount and Email Section -->
+            <div class="discount" style="width: 250px;">
+                <h1>
+                    <a href="HTML/product.html">30% Discount</a>
+                </h1>
+                <p>
+                    The BBC Watch Company offers finely crafted timepieces with classic styles and unparalleled craftsmanship. Don't miss the opportunity to upgrade your look with a special 30% discount. It won't last long!
+                </p><br>
+            </div>
+    
+            <!-- About Us Section -->
+            <div style="width: 250px;">
+                <h1>
+                    <a href="../HTML/AboutUS.html">About Us</a>
+                </h1>
+                <p>
+                    <a href="../HTML/AboutUS.html">Learn our story and meet our team</a>
+                </p>
+                <!-- Highlighted "Meet our Team" Section -->
+                <div class="team-section">
+                    <p style="font-weight: bold;">Meet our Team:</p>
+                    <ul style="margin-top: 10px; padding-left:20px;">
+                        <li><a href="../HTML/PragunCV.html"  target="_blank">Pragun Bhattarai</a></li>
+                        <li><a href="../HTML/DarsheelCV.html"  target="_blank">Darsheel Bam</a></li>
+                        <li><a href="../HTML/KhushiCV.html"  target="_blank">Khushi Shrestha</a></li>
+                        <li><a href="../HTML/UjjainCV.html" target="_blank">Ujjain Dhungana</a></li>
+                        <li><a href="../HTML/RodhanCV.html"  target="_blank">Rodhan Shrestha</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Logo Section -->
+            <div classs="footer-logo">
+                <a href="../Index.html">
+                    <img src="../image/Logo_png.png" alt="BBC Watch Company Logo" width="200" height="70">
+                </a>
+                <p>&#169; All rights reserved</p><br>
+                <p>Read our <br><a href="https://policies.google.com/privacy?hl=en-US">privacy policy</a> <br>and<br> <a href="https://en.wikipedia.org/wiki/Terms_of_service" >Terms and Conditions.</a></p>
+            </div>
+            <!-- Social Media Section (Using Table) -->
+            <div style="width: 250px;">
+                <h1>Follow Us</h1><br>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="../image/insta.jpg" alt="Instagram Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="../image/facebook.jpg" alt="Facebook Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://np.linkedin.com/" target="_blank"><img src="../image/Linkedin.png" alt="LinkedIn Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://np.linkedin.com/" target="_blank">LinkedIn</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://x.com/home" target="_blank"><img src="../image/x.png" alt="X (Twitter) Logo" width="30" height="30"></a>
+                        </td>
+                        <td>
+                            <a href="https://x.com/home" target="_blank">X / Twitter</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+    <script>
+			function validateForm()
+			{
+				var name = document.forms["messageForm"]["name"].value;
+				var address = document.forms["messageForm"]["address"].value;
+				var phone = document.forms["messageForm"]["phone"].value;
+				var messageDetails = document.forms["messageForm"]["message"].value;
+
+				//alert(messageDetails);
+				if (name == "" || address == "" || phone == "" || messageDetails == "") 
+				{
+					alert("Empty fields detected!!!!!. Please fill in the boxes");
+				}
+
+				else
+				{
+					 alert("Thank you for your feedback. Our support team will reach out to you soon!")
+				}
+			}
+    </script>
+ 
+</body>
+</html>
